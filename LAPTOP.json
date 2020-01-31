@@ -797,7 +797,7 @@
             "mode": "LR8",
             "subband": {
                 "threshold": "-30",
-                "ratio": "2.5",
+                "ratio": "3.5",
                 "attack": "100",
                 "release": "2000",
                 "makeup": "0",
