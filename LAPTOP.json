@@ -748,7 +748,7 @@
         },
         "limiter": {
             "state": "true",
-            "input-gain": "0",
+            "input-gain": "10",
             "limit": "0",
             "lookahead": "2",
             "release": "8",
@@ -790,7 +790,7 @@
         "multiband_compressor": {
             "state": "true",
             "input-gain": "0",
-            "output-gain": "10",
+            "output-gain": "0",
             "freq0": "250",
             "freq1": "1250",
             "freq2": "5000",
