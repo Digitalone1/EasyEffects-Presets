@@ -27,13 +27,13 @@
     "output": {
         "blacklist": "",
         "plugins_order": [
+            "compressor",
             "multiband_compressor",
             "limiter",
-            "maximizer",
             "bass_enhancer",
+            "maximizer",
             "stereo_tools",
             "filter",
-            "compressor",
             "autogain",
             "crystalizer",
             "exciter",
@@ -61,20 +61,20 @@
             "listen": "false"
         },
         "compressor": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "mode": "Downward",
-            "attack": "40",
-            "release": "250",
-            "threshold": "-40",
-            "ratio": "2",
-            "knee": "-20",
+            "mode": "Upward",
+            "attack": "100",
+            "release": "2000",
+            "threshold": "0",
+            "ratio": "1.5",
+            "knee": "-2",
             "makeup": "0",
             "sidechain": {
                 "listen": "false",
-                "type": "Feed-back",
-                "mode": "RMS",
+                "type": "Feed-forward",
+                "mode": "Peak",
                 "source": "Middle",
                 "preamp": "0",
                 "reactivity": "10",
@@ -748,7 +748,7 @@
         },
         "limiter": {
             "state": "true",
-            "input-gain": "10",
+            "input-gain": "0",
             "limit": "0",
             "lookahead": "2",
             "release": "8",
@@ -796,7 +796,18 @@
             "freq2": "5000",
             "mode": "LR8",
             "subband": {
-                "threshold": "-30",
+                "threshold": "-10",
+                "ratio": "2",
+                "attack": "100",
+                "release": "2000",
+                "makeup": "0",
+                "knee": "2",
+                "detection": "Peak",
+                "bypass": "true",
+                "solo": "false"
+            },
+            "lowband": {
+                "threshold": "-10",
                 "ratio": "2",
                 "attack": "100",
                 "release": "2000",
@@ -806,20 +817,9 @@
                 "bypass": "false",
                 "solo": "false"
             },
-            "lowband": {
-                "threshold": "-30",
-                "ratio": "2.5",
-                "attack": "100",
-                "release": "2000",
-                "makeup": "0",
-                "knee": "2",
-                "detection": "Peak",
-                "bypass": "false",
-                "solo": "false"
-            },
             "midband": {
-                "threshold": "-30",
-                "ratio": "2.5",
+                "threshold": "-10",
+                "ratio": "2",
                 "attack": "100",
                 "release": "2000",
                 "makeup": "0",
@@ -829,7 +829,7 @@
                 "solo": "false"
             },
             "highband": {
-                "threshold": "-30",
+                "threshold": "-10",
                 "ratio": "2",
                 "attack": "100",
                 "release": "2000",
