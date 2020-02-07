@@ -754,7 +754,7 @@
             "release": "10",
             "asc": "false",
             "asc-level": "0.5",
-            "oversampling": "1"
+            "oversampling": "4"
         },
         "maximizer": {
             "state": "false",
