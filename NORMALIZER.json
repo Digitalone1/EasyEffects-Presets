@@ -801,7 +801,7 @@
                 "attack": "1",
                 "release": "2000",
                 "makeup": "0",
-                "knee": "1",
+                "knee": "9",
                 "detection": "RMS",
                 "bypass": "false",
                 "solo": "false"
