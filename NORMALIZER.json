@@ -27,11 +27,11 @@
     "output": {
         "blacklist": "",
         "plugins_order": [
+            "gate",
             "compressor",
             "multiband_compressor",
             "limiter",
             "autogain",
-            "gate",
             "multiband_gate",
             "convolver",
             "bass_enhancer",
@@ -735,15 +735,15 @@
             "inertia": "20"
         },
         "gate": {
-            "state": "false",
+            "state": "true",
             "detection": "RMS",
-            "stereo-link": "Average",
+            "stereo-link": "Maximum",
             "range": "-24",
-            "attack": "20",
-            "release": "250",
-            "threshold": "-18",
+            "attack": "2000",
+            "release": "2000",
+            "threshold": "-40",
             "ratio": "2",
-            "knee": "9",
+            "knee": "18",
             "makeup": "0"
         },
         "limiter": {
