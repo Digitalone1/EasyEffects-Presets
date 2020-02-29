@@ -738,10 +738,10 @@
             "state": "true",
             "detection": "RMS",
             "stereo-link": "Maximum",
-            "range": "-24",
+            "range": "-25",
             "attack": "2000",
             "release": "2000",
-            "threshold": "-40",
+            "threshold": "-50",
             "ratio": "2",
             "knee": "18",
             "makeup": "0"
