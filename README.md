@@ -1,4 +1,23 @@
-# PulseEffects-Preset
+# PulseEffects Normalizer Preset
+
 This is my preset for [PulseEffects](https://github.com/wwmm/pulseeffects) on Linux.
 
-* **Normalizer** - A volume normalizer without Auto-Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to **loudness equalization** in Windows.
+A volume **Normalizer** without Auto-Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to **loudness equalization** in Windows.
+
+## How to install ##
+
+Download *NORMALIZER.json* file and copy it inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset. 
+
+## How it works
+
+An **upward compressor** is used to raise low level signals, then a downward **multiband compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **limiter** makes sure no clipping occurs, taking the overall signal below 0 db. 
+
+Since the upward compressor raises noise also, a **gate** is used on top of everything to reduce this side effect.
+
+## Why not a single compressor?
+
+I used downward compressors many times and noticed that higher the rate, lower the quality. So if you want to preserve some quality, you need to set a low rate, but low rates do not reduce the dynamic range sufficiently as needed in certain situations.
+
+Therefore an upward compressor is used to raise signals below a certain threshold, then a multiband compressor is set with a low rate.
+
+Obviously, the quality is not the same as original, but it's better than a compressor with high rate. Take in consideration that this is intended to be used only to get a quite steady level in high dynamic contents.
