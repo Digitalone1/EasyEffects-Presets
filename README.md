@@ -2,7 +2,7 @@
 
 This is my preset for [PulseEffects](https://github.com/wwmm/pulseeffects) on Linux.
 
-A volume **Normalizer** without Auto-Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to **loudness equalization** in Windows.
+A volume **Normalizer** without Auto-Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to **Loudness Equalization** in Windows.
 
 ## How to install ##
 
@@ -10,9 +10,9 @@ Download *NORMALIZER.json* file and copy it inside `~/.config/PulseEffects/outpu
 
 ## How it works
 
-An **upward compressor** is used to raise low level signals, then a downward **multiband compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **limiter** makes sure no clipping occurs, taking the overall signal below 0 db. 
+An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 db. 
 
-Since the upward compressor raises noise also, a **gate** is used on top of everything to reduce this side effect.
+Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so after a **Bass Enhancer** and an **Exciter** are introduced to add some armonics and improve low and high frequencies.
 
 ## Why not a single compressor?
 
