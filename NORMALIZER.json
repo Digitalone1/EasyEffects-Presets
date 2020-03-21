@@ -27,16 +27,15 @@
     "output": {
         "blacklist": "",
         "plugins_order": [
-            "filter",
             "gate",
             "compressor",
             "multiband_compressor",
+            "bass_enhancer",
+            "exciter",
             "limiter",
             "autogain",
             "multiband_gate",
             "convolver",
-            "bass_enhancer",
-            "exciter",
             "crystalizer",
             "stereo_tools",
             "reverb",
@@ -46,14 +45,15 @@
             "crossfeed",
             "loudness",
             "maximizer",
+            "filter",
             "pitch"
         ],
         "bass_enhancer": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "amount": "0",
-            "harmonics": "8.5",
+            "amount": "5",
+            "harmonics": "10",
             "scope": "100",
             "floor": "20",
             "blend": "0",
@@ -714,24 +714,24 @@
             }
         },
         "exciter": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "amount": "0",
-            "harmonics": "8.5",
-            "scope": "7500",
+            "amount": "5",
+            "harmonics": "10",
+            "scope": "12000",
             "ceil": "16000",
             "blend": "0",
             "ceil-active": "false",
             "listen": "false"
         },
         "filter": {
-            "state": "true",
+            "state": "false",
             "input-gain": "0",
             "output-gain": "0",
-            "frequency": "100",
+            "frequency": "2000",
             "resonance": "-3",
-            "mode": "36dB\/oct Highpass",
+            "mode": "12dB\/oct Lowpass",
             "inertia": "20"
         },
         "gate": {
@@ -790,8 +790,8 @@
         "multiband_compressor": {
             "state": "true",
             "input-gain": "0",
-            "output-gain": "-2",
-            "freq0": "100",
+            "output-gain": "-5",
+            "freq0": "250",
             "freq1": "1250",
             "freq2": "5000",
             "mode": "LR8",
@@ -803,7 +803,7 @@
                 "makeup": "0",
                 "knee": "2",
                 "detection": "RMS",
-                "bypass": "true",
+                "bypass": "false",
                 "solo": "false"
             },
             "lowband": {
