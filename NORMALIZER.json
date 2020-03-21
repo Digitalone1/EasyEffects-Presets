@@ -717,7 +717,7 @@
             "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "amount": "10",
+            "amount": "5",
             "harmonics": "10",
             "scope": "12000",
             "ceil": "16000",
@@ -790,7 +790,7 @@
         "multiband_compressor": {
             "state": "true",
             "input-gain": "0",
-            "output-gain": "-4",
+            "output-gain": "-5",
             "freq0": "250",
             "freq1": "1250",
             "freq2": "5000",
