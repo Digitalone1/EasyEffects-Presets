@@ -27,15 +27,16 @@
     "output": {
         "blacklist": "",
         "plugins_order": [
+            "filter",
             "gate",
             "compressor",
             "multiband_compressor",
-            "bass_enhancer",
-            "exciter",
             "limiter",
             "autogain",
             "multiband_gate",
             "convolver",
+            "bass_enhancer",
+            "exciter",
             "crystalizer",
             "stereo_tools",
             "reverb",
@@ -45,15 +46,14 @@
             "crossfeed",
             "loudness",
             "maximizer",
-            "filter",
             "pitch"
         ],
         "bass_enhancer": {
-            "state": "true",
+            "state": "false",
             "input-gain": "0",
             "output-gain": "0",
-            "amount": "5",
-            "harmonics": "10",
+            "amount": "0",
+            "harmonics": "8.5",
             "scope": "100",
             "floor": "20",
             "blend": "0",
@@ -68,7 +68,7 @@
             "attack": "1",
             "release": "2000",
             "threshold": "-4",
-            "ratio": "2",
+            "ratio": "3",
             "knee": "-2",
             "makeup": "0",
             "sidechain": {
@@ -714,24 +714,24 @@
             }
         },
         "exciter": {
-            "state": "true",
+            "state": "false",
             "input-gain": "0",
             "output-gain": "0",
-            "amount": "5",
-            "harmonics": "10",
-            "scope": "12000",
+            "amount": "0",
+            "harmonics": "8.5",
+            "scope": "7500",
             "ceil": "16000",
             "blend": "0",
             "ceil-active": "false",
             "listen": "false"
         },
         "filter": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "frequency": "2000",
+            "frequency": "100",
             "resonance": "-3",
-            "mode": "12dB\/oct Lowpass",
+            "mode": "36dB\/oct Highpass",
             "inertia": "20"
         },
         "gate": {
@@ -790,8 +790,8 @@
         "multiband_compressor": {
             "state": "true",
             "input-gain": "0",
-            "output-gain": "-5",
-            "freq0": "250",
+            "output-gain": "-2",
+            "freq0": "100",
             "freq1": "1250",
             "freq2": "5000",
             "mode": "LR8",
@@ -803,7 +803,7 @@
                 "makeup": "0",
                 "knee": "2",
                 "detection": "RMS",
-                "bypass": "false",
+                "bypass": "true",
                 "solo": "false"
             },
             "lowband": {
