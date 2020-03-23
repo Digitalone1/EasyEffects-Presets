@@ -65,10 +65,10 @@
             "input-gain": "0",
             "output-gain": "0",
             "mode": "Upward",
-            "attack": "1",
-            "release": "2000",
+            "attack": "250",
+            "release": "500",
             "threshold": "-4",
-            "ratio": "3",
+            "ratio": "2.5",
             "knee": "-2",
             "makeup": "0",
             "sidechain": {
@@ -751,7 +751,7 @@
             "input-gain": "0",
             "limit": "0",
             "lookahead": "4",
-            "release": "10",
+            "release": "5",
             "asc": "false",
             "asc-level": "0.5",
             "oversampling": "4"
