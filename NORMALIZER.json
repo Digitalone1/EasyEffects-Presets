@@ -742,7 +742,7 @@
             "attack": "2000",
             "release": "2000",
             "threshold": "-50",
-            "ratio": "2",
+            "ratio": "1.1000000000000001",
             "knee": "18",
             "makeup": "0"
         },
