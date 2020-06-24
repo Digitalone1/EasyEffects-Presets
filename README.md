@@ -14,7 +14,7 @@ An **Upward Compressor** is used to raise low level signals, then a downward **M
 
 Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so a **Bass Enhancer** and an **Exciter** are introduced to add some armonics and improve low and high frequencies.
 
-As an alternative, a version with **Perfect Equalizer/** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) after the multiband compressor is provided.
+As an alternative, a version with **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) after the multiband compressor is provided.
 
 ## Why not a single compressor?
 
