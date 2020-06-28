@@ -65,10 +65,10 @@
             "input-gain": "0",
             "output-gain": "0",
             "mode": "Upward",
-            "attack": "250",
-            "release": "500",
-            "threshold": "-4",
-            "ratio": "2.5",
+            "attack": "0",
+            "release": "200",
+            "threshold": "-15",
+            "ratio": "3.5",
             "knee": "0",
             "makeup": "0",
             "sidechain": {
@@ -348,7 +348,7 @@
         },
         "limiter": {
             "state": "true",
-            "input-gain": "-5",
+            "input-gain": "-2",
             "limit": "0",
             "lookahead": "4",
             "release": "5",
