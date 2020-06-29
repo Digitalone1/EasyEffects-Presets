@@ -65,7 +65,7 @@
             "input-gain": "0",
             "output-gain": "0",
             "mode": "Upward",
-            "attack": "0",
+            "attack": "2",
             "release": "200",
             "threshold": "-15",
             "ratio": "3.5",
@@ -78,7 +78,7 @@
                 "source": "Middle",
                 "preamp": "0",
                 "reactivity": "10",
-                "lookahead": "0"
+                "lookahead": "4"
             }
         },
         "crossfeed": {
