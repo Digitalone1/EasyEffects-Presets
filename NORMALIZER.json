@@ -65,20 +65,20 @@
             "input-gain": "0",
             "output-gain": "0",
             "mode": "Upward",
-            "attack": "2",
+            "attack": "1",
             "release": "1000",
-            "threshold": "-12",
-            "ratio": "3",
+            "threshold": "-10",
+            "ratio": "6",
             "knee": "0",
             "makeup": "0",
             "sidechain": {
                 "listen": "false",
                 "type": "Feed-forward",
-                "mode": "RMS",
+                "mode": "Low-Pass",
                 "source": "Middle",
                 "preamp": "0",
                 "reactivity": "10",
-                "lookahead": "4"
+                "lookahead": "5"
             }
         },
         "exciter": {
@@ -97,17 +97,17 @@
             "state": "true",
             "detection": "RMS",
             "stereo-link": "Maximum",
-            "range": "-25",
+            "range": "-30",
             "attack": "2000",
             "release": "1500",
-            "threshold": "-40",
-            "ratio": "1.75",
+            "threshold": "-35",
+            "ratio": "1.5",
             "knee": "18",
             "makeup": "0"
         },
         "limiter": {
             "state": "true",
-            "input-gain": "-3",
+            "input-gain": "0",
             "limit": "0",
             "lookahead": "4",
             "release": "5",
@@ -124,9 +124,9 @@
             "freq2": "5000",
             "mode": "LR8",
             "subband": {
-                "threshold": "-10",
-                "ratio": "1.5",
-                "attack": "60",
+                "threshold": "-5",
+                "ratio": "10",
+                "attack": "10",
                 "release": "1000",
                 "makeup": "0",
                 "knee": "10",
@@ -135,9 +135,9 @@
                 "solo": "false"
             },
             "lowband": {
-                "threshold": "-10",
-                "ratio": "1.5",
-                "attack": "50",
+                "threshold": "-5",
+                "ratio": "10",
+                "attack": "5",
                 "release": "900",
                 "makeup": "0",
                 "knee": "10",
@@ -146,9 +146,9 @@
                 "solo": "false"
             },
             "midband": {
-                "threshold": "-10",
-                "ratio": "1.5",
-                "attack": "30",
+                "threshold": "-5",
+                "ratio": "10",
+                "attack": "1",
                 "release": "800",
                 "makeup": "0",
                 "knee": "10",
@@ -157,9 +157,9 @@
                 "solo": "false"
             },
             "highband": {
-                "threshold": "-10",
-                "ratio": "1.5",
-                "attack": "20",
+                "threshold": "-5",
+                "ratio": "10",
+                "attack": "1",
                 "release": "700",
                 "makeup": "0",
                 "knee": "10",

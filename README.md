@@ -16,8 +16,6 @@ Since the upward compressor raises noise also, a **Gate** is used on top of ever
 
 As an alternative, a version with **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) after the multiband compressor is provided.
 
-There is also a **Strong** variant for both versions with higher compression ratio, recommended only for *low volume* hardware.
-
 ## Why not a single compressor?
 
 I used downward compressors many times and noticed that higher the rate, lower the quality. So if you want to preserve some quality, you need to set a low rate, but low rates do not reduce the dynamic range sufficiently as needed in certain situations.
