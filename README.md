@@ -6,15 +6,13 @@ A volume **Normalizer** without Auto-Gain plugin. Useful if you're looking for a
 
 ## How to install ##
 
-Download *NORMALIZER.json* and/or *NORMALIZER + EQUALIZER.json* files and copy them inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset. 
+Download *NORMALIZER + EQUALIZER.json* file and copy it inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset. 
 
 ## How it works
 
 An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 db. 
 
-Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so a **Bass Enhancer** and an **Exciter** are introduced to add some armonics and improve low and high frequencies.
-
-As an alternative, a version with **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) after the multiband compressor is provided.
+Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so the **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) is introduced before the limiter.
 
 ## Why not a single compressor?
 
