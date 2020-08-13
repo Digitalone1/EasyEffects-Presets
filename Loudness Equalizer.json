@@ -3,8 +3,8 @@
         "show": "true",
         "n-points": "200",
         "height": "100",
-        "use-custom-color": "false",
-        "fill": "false",
+        "use-custom-color": "true",
+        "fill": "true",
         "show-bar-border": "true",
         "scale": "1",
         "exponent": "1",
@@ -12,9 +12,15 @@
         "line-width": "1.5",
         "type": "Bars",
         "color": [
-            "1",
-            "1",
-            "1",
+            "0.447",
+            "0.624",
+            "0.812",
+            "1"
+        ],
+        "color-axis-labels": [
+            "0.447",
+            "0.624",
+            "0.812",
             "1"
         ],
         "gradient-color": [
