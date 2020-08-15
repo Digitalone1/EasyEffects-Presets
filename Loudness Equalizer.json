@@ -6,8 +6,6 @@
         "use-custom-color": "true",
         "fill": "true",
         "show-bar-border": "true",
-        "scale": "1",
-        "exponent": "1",
         "sampling-freq": "10",
         "line-width": "1.5",
         "type": "Bars",

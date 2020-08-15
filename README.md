@@ -8,6 +8,8 @@ A **Loudness Equalizer** which performs automatic volume adjustment without the 
 
 Download *Loudness Equalizer.json* file and copy it inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset. 
 
+It's recommended to use it with PulseEffects **4.8.0** or higher version.
+
 ## How it works
 
 An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 dB. 
