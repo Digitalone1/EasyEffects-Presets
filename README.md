@@ -1,4 +1,4 @@
-# PulseEffects Normalizer Preset
+# PulseEffects Loudness Equalizer Preset
 
 This is my preset for [PulseEffects](https://github.com/wwmm/pulseeffects).
 
