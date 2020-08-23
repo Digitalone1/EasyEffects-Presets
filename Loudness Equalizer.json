@@ -29,7 +29,6 @@
         ]
     },
     "output": {
-        "blacklist": "",
         "plugins_order": [
             "gate",
             "compressor",
