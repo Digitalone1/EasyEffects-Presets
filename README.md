@@ -8,7 +8,7 @@ A **Loudness Equalizer** which performs automatic volume adjustment without the 
 
 Download *Loudness Equalizer.json* file and copy it inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset.
 
-If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the .json file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output/`
+If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output` folder.
 
 It's recommended to use it with PulseEffects **4.8.0** or higher version.
 
