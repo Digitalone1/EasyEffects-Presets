@@ -1,20 +1,20 @@
-# PulseEffects Loudness Equalizer Preset
+# PulseEffects/EasyEffects Loudness Equalizer Preset
 
-This is my preset for [PulseEffects](https://github.com/wwmm/pulseeffects).
+This is my preset for [EasyEffects](https://github.com/wwmm/easyeffects). An alternate version is also provided for [Legacy PulseEffects](https://github.com/wwmm/easyeffects/tree/pulseaudio-legacy).
 
 A **Loudness Equalizer** which performs automatic volume adjustment without the Auto Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to the **Loudness Equalization** option in Microsoft Windows.
 
 ## How to install ##
 
-Download *Loudness Equalizer.json* file and copy it inside `~/.config/PulseEffects/output` folder. Close and restart PulseEffects, then apply the new preset.
+Download *LoudnessEqualizer.json* file and copy it inside `~/.config/easyeffects/output` folder. Close and restart EasyEffects, then apply the new preset. It is recommended to by used on **6.0.0** or higher versions.
+
+For legacy PulseEffects, use *LoudnessEqualizerPE.json* and copy it inside `~/.config/PulseEffects/output`. This one is recommended to be used on **4.8.0** or higher versions.
 
 If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output` folder.
 
-It's recommended to use it with PulseEffects **4.8.0** or higher version.
-
 ## How it works
 
-An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 dB. 
+An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 dB.
 
 Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so the **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) is introduced to improve it before the limiter.
 
