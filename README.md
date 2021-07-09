@@ -1,16 +1,22 @@
 # PulseEffects/EasyEffects Loudness Equalizer Preset
 
-This is my preset for [EasyEffects](https://github.com/wwmm/easyeffects). An alternate version is also provided for [Legacy PulseEffects](https://github.com/wwmm/easyeffects/tree/pulseaudio-legacy).
+This is my preset for [EasyEffects](https://github.com/wwmm/easyeffects). Two alternate versions are also provided for [Legacy PulseEffects](https://github.com/wwmm/easyeffects/tree/pulseaudio-legacy) and [Carla-Rack Jack Host](https://kx.studio/Applications:Carla).
 
 A **Loudness Equalizer** which performs automatic volume adjustment without the Auto Gain plugin. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to the **Loudness Equalization** option in Microsoft Windows.
 
-## How to install ##
+## How to install
 
 Download *LoudnessEqualizer.json* file and copy it inside `~/.config/easyeffects/output` folder. Close and restart EasyEffects, then apply the new preset. It is recommended to by used on **6.0.0** or higher versions.
 
 For legacy PulseEffects, use *LoudnessEqualizerPE.json* and copy it inside `~/.config/PulseEffects/output`. This one is recommended to be used on **4.8.0** or higher versions.
 
 If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output` folder.
+
+## Better quality with Carla
+
+A preset for Carla-Rack Jack Host is provided using only LSP Plugins with much better audio quality.
+
+Launch **carla-rack** and open *LoudnessEqualizer.carxp* file, then connect your favorite nodes and sinks/sources in Patchbay tab. To use it with Pipewire and make a persistent configuration at system startup, follow this [guide](https://wiki.archlinux.org/title/PipeWire#LADSPA,_LV2_and_VST_plugins).
 
 ## How it works
 
