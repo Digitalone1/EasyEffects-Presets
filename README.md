@@ -6,11 +6,9 @@ A **Loudness Equalizer** which performs automatic volume adjustment without the 
 
 ## How to install
 
-Download *LoudnessEqualizer.json* file and copy it inside `~/.config/easyeffects/output` folder. Close and restart EasyEffects, then apply the new preset. It is recommended to by used on **6.0.0** or higher versions.
+Download *LoudnessEqualizer.json* file and copy it inside `~/.config/easyeffects/output` folder. Close and restart EasyEffects, then apply the new preset. It is recommended to be used on **6.0.0** or higher versions.
 
-For legacy PulseEffects, use *LoudnessEqualizerPE.json* and copy it inside `~/.config/PulseEffects/output`. This one is recommended to be used on **4.8.0** or higher versions.
-
-If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output` folder.
+For legacy PulseEffects, use *LoudnessEqualizerPE.json* and copy it inside `~/.config/PulseEffects/output`. This one is recommended to be used on **4.8.0** or higher versions. If you have the [FlatPak version of PulseEffects](https://flathub.org/apps/details/com.github.wwmm.pulseeffects), place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output` folder.
 
 ## Better quality with Carla
 
