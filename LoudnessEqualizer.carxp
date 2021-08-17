@@ -10,10 +10,6 @@
   <UIBridgesTimeout>4000</UIBridgesTimeout>
  </EngineSettings>
 
- <Transport>
-  <BeatsPerMinute>120</BeatsPerMinute>
- </Transport>
-
  <!-- LSP Gate Stereo -->
  <Plugin>
   <Info>
@@ -143,14 +139,14 @@
     <Index>16</Index>
     <Name>Curve threshold</Name>
     <Symbol>gt</Symbol>
-    <Value>0.00100000004749745</Value>
+    <Value>0.0031622766982764</Value>
    </Parameter>
 
    <Parameter>
     <Index>17</Index>
     <Name>Curve zone size</Name>
     <Symbol>gz</Symbol>
-    <Value>0.31622776389122</Value>
+    <Value>0.00999999977648258</Value>
    </Parameter>
 
    <Parameter>
@@ -331,7 +327,7 @@
     <Index>6</Index>
     <Name>Sidechain mode</Name>
     <Symbol>scm</Symbol>
-    <Value>2</Value>
+    <Value>1</Value>
    </Parameter>
 
    <Parameter>
@@ -422,7 +418,7 @@
     <Index>19</Index>
     <Name>Release threshold</Name>
     <Symbol>rrl</Symbol>
-    <Value>0</Value>
+    <Value>9.99999770101567e-07</Value>
    </Parameter>
 
    <Parameter>
@@ -827,7 +823,7 @@
     <Index>42</Index>
     <Name>Sidechain hi-cut frequency 0</Name>
     <Symbol>schf_0</Symbol>
-    <Value>40</Value>
+    <Value>250</Value>
    </Parameter>
 
    <Parameter>
@@ -897,7 +893,7 @@
     <Index>52</Index>
     <Name>Knee 0</Name>
     <Symbol>kn_0</Symbol>
-    <Value>0.31622776389122</Value>
+    <Value>0.0631000027060509</Value>
    </Parameter>
 
    <Parameter>
@@ -981,14 +977,14 @@
     <Index>69</Index>
     <Name>Sidechain lo-cut frequency 1</Name>
     <Symbol>sclf_1</Symbol>
-    <Value>40</Value>
+    <Value>250</Value>
    </Parameter>
 
    <Parameter>
     <Index>70</Index>
     <Name>Sidechain hi-cut frequency 1</Name>
     <Symbol>schf_1</Symbol>
-    <Value>100</Value>
+    <Value>1250</Value>
    </Parameter>
 
    <Parameter>
@@ -1058,7 +1054,7 @@
     <Index>80</Index>
     <Name>Knee 1</Name>
     <Symbol>kn_1</Symbol>
-    <Value>0.31622776389122</Value>
+    <Value>0.0631000027060509</Value>
    </Parameter>
 
    <Parameter>
@@ -1142,14 +1138,14 @@
     <Index>97</Index>
     <Name>Sidechain lo-cut frequency 2</Name>
     <Symbol>sclf_2</Symbol>
-    <Value>100</Value>
+    <Value>1250</Value>
    </Parameter>
 
    <Parameter>
     <Index>98</Index>
     <Name>Sidechain hi-cut frequency 2</Name>
     <Symbol>schf_2</Symbol>
-    <Value>252</Value>
+    <Value>5000</Value>
    </Parameter>
 
    <Parameter>
@@ -1219,7 +1215,7 @@
     <Index>108</Index>
     <Name>Knee 2</Name>
     <Symbol>kn_2</Symbol>
-    <Value>0.31622776389122</Value>
+    <Value>0.0631000027060509</Value>
    </Parameter>
 
    <Parameter>
@@ -1303,14 +1299,14 @@
     <Index>125</Index>
     <Name>Sidechain lo-cut frequency 3</Name>
     <Symbol>sclf_3</Symbol>
-    <Value>252</Value>
+    <Value>5000</Value>
    </Parameter>
 
    <Parameter>
     <Index>126</Index>
     <Name>Sidechain hi-cut frequency 3</Name>
     <Symbol>schf_3</Symbol>
-    <Value>632</Value>
+    <Value>19999.9921875</Value>
    </Parameter>
 
    <Parameter>
@@ -1380,7 +1376,7 @@
     <Index>136</Index>
     <Name>Knee 3</Name>
     <Symbol>kn_3</Symbol>
-    <Value>0.31622776389122</Value>
+    <Value>0.0631000027060509</Value>
    </Parameter>
 
    <Parameter>
@@ -3219,7 +3215,7 @@
     <Index>1</Index>
     <Name>Input gain</Name>
     <Symbol>g_in</Symbol>
-    <Value>0.794328212738037</Value>
+    <Value>1</Value>
    </Parameter>
 
    <Parameter>
@@ -3268,7 +3264,7 @@
     <Index>8</Index>
     <Name>Threshold</Name>
     <Symbol>th</Symbol>
-    <Value>1</Value>
+    <Value>0.891250908374786</Value>
    </Parameter>
 
    <Parameter>
@@ -3310,7 +3306,7 @@
     <Index>14</Index>
     <Name>Oversampling</Name>
     <Symbol>ovs</Symbol>
-    <Value>12</Value>
+    <Value>6</Value>
    </Parameter>
 
    <Parameter>
@@ -3404,4 +3400,7 @@
    </CustomData>
   </Data>
  </Plugin>
+
+ <ExternalPatchbay>
+ </ExternalPatchbay>
 </CARLA-PROJECT>
