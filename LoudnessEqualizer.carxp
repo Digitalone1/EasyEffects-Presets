@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE CARLA-PROJECT>
-<CARLA-PROJECT VERSION='2.3'>
+<CARLA-PROJECT VERSION='2.4'>
  <EngineSettings>
   <ForceStereo>true</ForceStereo>
   <PreferPluginBridges>false</PreferPluginBridges>
@@ -369,28 +369,28 @@
     <Index>12</Index>
     <Name>High-pass filter mode</Name>
     <Symbol>shpm</Symbol>
-    <Value>2</Value>
+    <Value>0</Value>
    </Parameter>
 
    <Parameter>
     <Index>13</Index>
     <Name>High-pass filter frequency</Name>
     <Symbol>shpf</Symbol>
-    <Value>500</Value>
+    <Value>10</Value>
    </Parameter>
 
    <Parameter>
     <Index>14</Index>
     <Name>Low-pass filter mode</Name>
     <Symbol>slpm</Symbol>
-    <Value>2</Value>
+    <Value>0</Value>
    </Parameter>
 
    <Parameter>
     <Index>15</Index>
     <Name>Low-pass filter frequency</Name>
     <Symbol>slpf</Symbol>
-    <Value>15000</Value>
+    <Value>20000</Value>
    </Parameter>
 
    <Parameter>
@@ -432,14 +432,14 @@
     <Index>21</Index>
     <Name>Ratio</Name>
     <Symbol>cr</Symbol>
-    <Value>3.5</Value>
+    <Value>5</Value>
    </Parameter>
 
    <Parameter>
     <Index>22</Index>
     <Name>Knee</Name>
     <Symbol>kn</Symbol>
-    <Value>0.0631000027060509</Value>
+    <Value>0.0638263449072838</Value>
    </Parameter>
 
    <Parameter>
@@ -858,7 +858,7 @@
     <Index>47</Index>
     <Name>Attack threshold 0</Name>
     <Symbol>al_0</Symbol>
-    <Value>0.0999999940395355</Value>
+    <Value>0.0316227748990059</Value>
    </Parameter>
 
    <Parameter>
@@ -886,7 +886,7 @@
     <Index>51</Index>
     <Name>Ratio 0</Name>
     <Symbol>cr_0</Symbol>
-    <Value>2</Value>
+    <Value>1.70000004768372</Value>
    </Parameter>
 
    <Parameter>
@@ -1019,7 +1019,7 @@
     <Index>75</Index>
     <Name>Attack threshold 1</Name>
     <Symbol>al_1</Symbol>
-    <Value>0.0999999940395355</Value>
+    <Value>0.0316227748990059</Value>
    </Parameter>
 
    <Parameter>
@@ -1047,7 +1047,7 @@
     <Index>79</Index>
     <Name>Ratio 1</Name>
     <Symbol>cr_1</Symbol>
-    <Value>2</Value>
+    <Value>1.70000004768372</Value>
    </Parameter>
 
    <Parameter>
@@ -1180,7 +1180,7 @@
     <Index>103</Index>
     <Name>Attack threshold 2</Name>
     <Symbol>al_2</Symbol>
-    <Value>0.0999999940395355</Value>
+    <Value>0.0316227748990059</Value>
    </Parameter>
 
    <Parameter>
@@ -1208,7 +1208,7 @@
     <Index>107</Index>
     <Name>Ratio 2</Name>
     <Symbol>cr_2</Symbol>
-    <Value>2</Value>
+    <Value>1.70000004768372</Value>
    </Parameter>
 
    <Parameter>
@@ -1341,7 +1341,7 @@
     <Index>131</Index>
     <Name>Attack threshold 3</Name>
     <Symbol>al_3</Symbol>
-    <Value>0.0999999940395355</Value>
+    <Value>0.0316227748990059</Value>
    </Parameter>
 
    <Parameter>
@@ -1369,7 +1369,7 @@
     <Index>135</Index>
     <Name>Ratio 3</Name>
     <Symbol>cr_3</Symbol>
-    <Value>2</Value>
+    <Value>1.70000004768372</Value>
    </Parameter>
 
    <Parameter>

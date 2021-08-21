@@ -5,16 +5,16 @@
             "attack": 130.0,
             "boost-amount": 6.0,
             "boost-threshold": -60.0,
-            "hpf-frequency": 500.0,
-            "hpf-mode": "24 dB/oct",
+            "hpf-frequency": 10.0,
+            "hpf-mode": "off",
             "input-gain": 0.0,
-            "knee": -23.99,
-            "lpf-frequency": 1500.0,
-            "lpf-mode": "24 dB/oct",
+            "knee": -23.9,
+            "lpf-frequency": 20000.0,
+            "lpf-mode": "off",
             "makeup": 0.0,
             "mode": "Upward",
             "output-gain": 0.0,
-            "ratio": 3.5,
+            "ratio": 5.0,
             "release": 600.0,
             "release-threshold": -120.0,
             "sidechain": {
@@ -246,7 +246,7 @@
             "makeup": 0.0,
             "output-gain": 0.0,
             "range": -30.0,
-            "ratio": 1.5,
+            "ratio": 2.0,
             "release": 2000.0,
             "stereo-link": "Average",
             "threshold": -50.0
@@ -271,7 +271,7 @@
         },
         "multiband_compressor": {
             "band0": {
-                "attack-threshold": -20.0,
+                "attack-threshold": -30.0,
                 "attack-time": 50.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
@@ -280,7 +280,7 @@
                 "knee": -24.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 2.0,
+                "ratio": 1.7,
                 "release-threshold": -120.0,
                 "release-time": 600.0,
                 "sidechain-custom-highcut-filter": false,
@@ -295,7 +295,7 @@
                 "solo": false
             },
             "band1": {
-                "attack-threshold": -20.0,
+                "attack-threshold": -30.0,
                 "attack-time": 30.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
@@ -305,7 +305,7 @@
                 "knee": -24.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 2.0,
+                "ratio": 1.7,
                 "release-threshold": -120.0,
                 "release-time": 450.0,
                 "sidechain-custom-highcut-filter": false,
@@ -321,7 +321,7 @@
                 "split-frequency": 250.0
             },
             "band2": {
-                "attack-threshold": -20.0,
+                "attack-threshold": -30.0,
                 "attack-time": 10.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
@@ -331,7 +331,7 @@
                 "knee": -24.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 2.0,
+                "ratio": 1.7,
                 "release-threshold": -120.0,
                 "release-time": 250.0,
                 "sidechain-custom-highcut-filter": false,
@@ -347,7 +347,7 @@
                 "split-frequency": 1250.0
             },
             "band3": {
-                "attack-threshold": -20.0,
+                "attack-threshold": -30.0,
                 "attack-time": 5.0,
                 "boost-amount": 6.0,
                 "boost-threshold": -72.0,
@@ -357,7 +357,7 @@
                 "knee": -24.0,
                 "makeup": 0.0,
                 "mute": false,
-                "ratio": 2.0,
+                "ratio": 1.7,
                 "release-threshold": -120.0,
                 "release-time": 100.0,
                 "sidechain-custom-highcut-filter": false,
