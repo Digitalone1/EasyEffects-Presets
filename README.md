@@ -6,17 +6,17 @@ It's a **Loudness Equalizer** which performs automatic volume adjustment without
 
 ## Announcement
 
-From version **6.2.7** EasyEffects has migrated the Gate from Calf to LSP version. A new preset is provided while the old one suitable till version **6.2.6** is available as ***LoudnessEqualizerOldGate.json***.
+From version **6.2.7** EasyEffects has migrated the Gate from Calf to LSP version. A new preset is provided while the old one, suitable till version **6.2.6**, is available as ***LoudnessEqualizerOldGate.json***.
 
 ## How to download
 
-Click on ***Code*** button and download the zip archive. Extract it on your system and pick the preset you need. Every other method you use, especially if you go in the preset page and right-click ***Save As***, might result in a corrupted and not working file.
+Click on ***Code*** button and download the zip archive. Extract it on your system and pick the preset you need. You can also clone the git repository. Every other method you use, especially if you go in the preset page and right-click ***Save As***, might result in a corrupted and not working file.
 
 ## How to install
 
-This repository provides four files:
+This repository provides 4 files:
 
-- ***LoudnessEqualizerOldGate.json*** for EasyEffects on Pipewire.
+- ***LoudnessEqualizer.json*** for EasyEffects on Pipewire.
 
   Recommended for **6.2.7** or higher versions. To apply, copy it inside `~/.config/easyeffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`). Close and restart EasyEffects, then apply the new preset.
 
