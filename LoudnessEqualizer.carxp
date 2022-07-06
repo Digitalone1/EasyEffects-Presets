@@ -10,6 +10,10 @@
   <UIBridgesTimeout>4000</UIBridgesTimeout>
  </EngineSettings>
 
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
  <!-- LSP Gate Stereo -->
  <Plugin>
   <Info>
@@ -139,7 +143,7 @@
     <Index>16</Index>
     <Name>Curve threshold</Name>
     <Symbol>gt</Symbol>
-    <Value>0.0031622766982764</Value>
+    <Value>0.00999999977648258</Value>
    </Parameter>
 
    <Parameter>
@@ -181,7 +185,7 @@
     <Index>22</Index>
     <Name>Reduction</Name>
     <Symbol>gr</Symbol>
-    <Value>0.0158489290624857</Value>
+    <Value>0.0316227748990059</Value>
    </Parameter>
 
    <Parameter>
