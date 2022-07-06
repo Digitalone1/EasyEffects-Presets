@@ -3,7 +3,6 @@
         "blocklist": [],
         "compressor": {
             "attack": 130.0,
-            "bypass": false,
             "boost-amount": 6.0,
             "boost-threshold": -60.0,
             "hpf-frequency": 10.0,
@@ -29,7 +28,6 @@
             "threshold": -10.0
         },
         "equalizer": {
-            "bypass": false,
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -242,34 +240,20 @@
         },
         "gate": {
             "attack": 2000.0,
-            "bypass": false,
-            "curve-threshold": -40.0,
-            "curve-zone": -40.0,
-            "hpf-frequency": 10.0,
-            "hpf-mode": "off",
-            "hysteresis": false,
-            "hysteresis-threshold": -12.0,
-            "hysteresis-zone": -6.0,
+            "detection": "Peak",
             "input-gain": 0.0,
-            "lpf-frequency": 20000.0,
-            "lpf-mode": "off",
+            "knee": 18.0,
             "makeup": 0.0,
             "output-gain": 0.0,
-            "reduction": -30.0,
+            "range": -30.0,
+            "ratio": 2.0,
             "release": 2000.0,
-            "sidechain": {
-                "input": "Internal",
-                "lookahead": 0.0,
-                "mode": "Peak",
-                "preamp": 0.0,
-                "reactivity": 10.0,
-                "source": "Middle"
-            }
+            "stereo-link": "Average",
+            "threshold": -50.0
         },
         "limiter": {
             "alr": false,
             "attack": 5.0,
-            "bypass": false,
             "dithering": "None",
             "external-sidechain": false,
             "gain-boost": false,
@@ -402,7 +386,6 @@
             "band7": {
                 "enable-band": false
             },
-            "bypass": false,
             "compressor-mode": "Modern",
             "envelope-boost": "None",
             "input-gain": 0.0,
