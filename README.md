@@ -40,7 +40,7 @@ Since the upward compressor raises noise also, a **Gate** is used on top of ever
 
 ## Using headphones?
 
-With headphones I recommend to add the **Crossfeed** effect between the Equalizer and the Limiter. I use the _Jmeier_ preset, but also _Default_ and _Cmoy_ ones can be chosen as you like.
+With headphones I recommend to add the **Crossfeed** effect at the last position, after the Limiter (no worries about clipping, the Crossfeed generally lowers the amplitude and does not output above 0 dB). I use the _Jmeier_ preset, but also _Default_ and _Cmoy_ ones can be chosen as you like.
 
 ## Why not a single compressor?
 
