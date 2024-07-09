@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.github.wwmm.easyeffects.Presets.LoudnessEqualizer</id>
+  <extends>com.github.wwmm.easyeffects</extends>
+  <name>Loudness Equalizer Easy Effects Presets</name>
+  <developer id="io.github.digitalone1">
+    <name>Giusy Digital</name>
+  </developer>
+  <summary>A Loudness Equalizer preset which performs automatic volume adjustment without the Auto Gain effect</summary>
+  <url type="homepage">https://github.com/Digitalone1/EasyEffects-Presets</url>
+  <url type="vcs-browser">https://github.com/Digitalone1/EasyEffects-Presets</url>
+  <url type="help">https://github.com/Digitalone1/EasyEffects-Presets</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+</component>
