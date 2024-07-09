@@ -14,9 +14,9 @@ Click on ***Code*** button and download the zip archive. Extract it on your syst
 
 ## How to install
 
-This repository provides 4 files:
+This repository provides 4 versions:
 
-- ***LoudnessEqualizer.json*** for EasyEffects on Pipewire.
+- ***LoudnessEqualizer.json*** and ***LoudnessCrystalEqualizer.json*** for EasyEffects on Pipewire.
 
   Recommended for **7.0.0** or higher versions. To apply, copy it inside `~/.config/easyeffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`). Close and restart EasyEffects, then apply the new preset.
 
@@ -36,7 +36,9 @@ This repository provides 4 files:
 
 An **Upward Compressor** is used to raise low level signals, then a downward **Multiband Compressor** is added to decrease the amplitude of the signal splitted in four different bands. At last, a **Limiter** makes sure no clipping occurs, taking the overall signal below 0 dB.
 
-Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband compressor will reduce sound quality, so the **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) is introduced to improve it before the limiter.
+Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband Compressor will reduce sound quality, so the **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) is introduced to improve it before the limiter.
+
+An additional version adds the **Crystalizer** after the Multiband Compressor to extend the dynamic range a little bit.  
 
 ## Using headphones?
 
