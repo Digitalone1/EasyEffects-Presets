@@ -1,12 +1,12 @@
 # PulseEffects/EasyEffects Loudness Equalizer Preset
 
-This is my preset for [EasyEffects](https://github.com/wwmm/easyeffects). Two alternate versions are also provided for [Legacy PulseEffects](https://github.com/wwmm/easyeffects/tree/pulseaudio-legacy) and [Carla-Rack Jack Host](https://kx.studio/Applications:Carla).
+These are my presets for [Easy Effects](https://github.com/wwmm/easyeffects). Two alternate versions are also provided for [Legacy PulseEffects](https://github.com/wwmm/easyeffects/tree/pulseaudio-legacy) and [Carla-Rack Jack Host](https://kx.studio/Applications:Carla).
 
 It's a **Loudness Equalizer** which performs automatic volume adjustment without the Auto Gain effect. Useful if you're looking for a steady sound level in high dynamic contents like movies when you don't want to adjust volume too many times. It's similar to the **Loudness Equalization** option in Microsoft Windows.
 
 ## Announcement
 
-From version **6.2.7** EasyEffects has migrated the Gate from Calf to LSP version. A new preset is provided while the old one, suitable till version **6.2.6**, is available as ***LoudnessEqualizerOldGate.json***.
+From version **6.2.7**, Easy Effects has migrated the Gate from Calf to LSP version. A new preset is provided while the old one, suitable till version **6.2.6**, is available as ***LoudnessEqualizerOldGate.json***.
 
 ## How to download
 
@@ -14,21 +14,27 @@ Click on ***Code*** button and download the zip archive. Extract it on your syst
 
 ## How to install
 
-This repository provides 4 versions:
+Choose the preset you want and copy it inside `~/.config/easyeffects/output` folder. If you have the the **Flatpak** version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`. Close and restart Easy Effects, then apply the new preset.
 
-- ***LoudnessEqualizer.json*** and ***LoudnessCrystalEqualizer.json*** for EasyEffects on Pipewire.
+This repository provides 5 versions:
 
-  Recommended for **7.0.0** or higher versions. To apply, copy it inside `~/.config/easyeffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`). Close and restart EasyEffects, then apply the new preset.
+1. ***LoudnessEqualizer.json*** and ***LoudnessCrystalEqualizer.json*** for new Easy Effects versions using Qt framework.
 
-- ***LoudnessEqualizerOldGate.json*** for EasyEffects on Pipewire.
+  Recommended for **8.0.0** or higher versions.
 
-  This uses the old Gate from Calf, removed by newer versions. Recommended from **6.1.0** to **6.2.6** versions. Install same as the previous.
+2. ***LoudnessEqualizer-GTK.json*** and ***LoudnessCrystalEqualizer-GTK.json*** for Easy Effects with new LSP Gate plugin.
 
-- ***LoudnessEqualizerPE.json*** for PulseEffects 5 on PipeWire or legacy PulseEffects on plain PulseAudio.
+  Recommended from **7.0.0** to **7.2.5** versions.
 
-  This uses the old Multiband Compressor and Limiter from Calf, removed by newer versions. Recommended on **4.8.0** or higher versions. To apply, copy it inside `~/.config/PulseEffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`). Close and restart PulseEffects, then apply the new preset.
+3. ***LoudnessEqualizer-OldGate.json*** for Easy Effects versions on Pipewire using the old Gate plugin from Calf.
 
-- ***LoudnessEqualizer.carxp*** for Carla-Rack Jack Host.
+  Recommended from **6.1.0** to **6.2.6** versions..
+
+4. ***LoudnessEqualizer-PE.json*** for PulseEffects 5 on PipeWire or legacy PulseEffects on plain PulseAudio.
+
+  This uses the old Multiband Compressor and Limiter from Calf, removed by newer versions. Recommended on **4.8.0** or higher versions. To apply, copy it inside `~/.config/PulseEffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`).
+
+5. ***LoudnessEqualizer.carxp*** for Carla-Rack Jack Host.
 
   Launch **carla-rack** and open the file, then connect your favorite nodes and sinks/sources in Patchbay tab. To use it with Pipewire and make a persistent configuration at system startup, follow this [guide](https://wiki.archlinux.org/title/PipeWire#LADSPA,_LV2_and_VST_plugins).
 
@@ -38,16 +44,17 @@ An **Upward Compressor** is used to raise low level signals, then a downward **M
 
 Since the upward compressor raises noise also, a **Gate** is used on top of everything to reduce this side effect. Multiband Compressor will reduce sound quality, so the **Perfect Equalizer** (by [Ziyad Nazem](https://www.ziyadnazem.com/post/956431457/the-perfect-eq-settings-unmasking-the-eq)) is introduced to improve it before the limiter.
 
-An additional version adds the **Crystalizer** after the Multiband Compressor to extend the dynamic range a little bit.  
+An additional version adds the **Crystalizer** after the Multiband Compressor to extend the dynamic range a little bit.
 
 ## Using headphones?
 
 With headphones I recommend to add the **Crossfeed** effect at the last position, after the Limiter (no worries about clipping, the Crossfeed generally lowers the amplitude and does not output above 0 dB). I use the _Jmeier_ preset, but also _Default_ and _Cmoy_ ones can be chosen as you like.
 
-## Why not a single compressor?
+## Why not a single Compressor?
 
 I used downward compressors many times and noticed that higher the rate, lower the quality. So if you want to preserve some quality, you need to set a low rate, but low rates do not reduce the dynamic range sufficiently as needed in certain situations.
 
 Therefore an upward compressor is used to raise signals below a certain threshold, then a multiband compressor is set with a low rate.
 
 Obviously, the quality is not the same as original, but it's better than a compressor with high rate. Take in consideration that this is intended to be used only to get a quite steady level in high dynamic contents.
+
