@@ -33,7 +33,7 @@
             "wet": 0.0
         },
         "crystalizer#0": {
-            "adaptive-intensity": true,
+            "adaptive-intensity": false,
             "band0": {
                 "bypass": false,
                 "intensity": 0.0,
