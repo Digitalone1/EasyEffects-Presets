@@ -14,13 +14,15 @@ Click on ***Code*** button and download the zip archive. Extract it on your syst
 
 ## How to install
 
-Choose the preset you want and copy it inside `~/.local/share/easyeffects/output` folder. If you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`.
+Choose the preset you want and copy it inside `~/.local/share/easyeffects/output` folder. If you have the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`.
 
-For older Easy Effects GTK/Libadwaita versions, copy it inside `~/.config/easyeffects/output` folder. If you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`.
+For older Easy Effects GTK/Libadwaita versions, copy it inside `~/.config/easyeffects/output` folder. If you have the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`.
 
-For older PulseEffects, copy it inside `~/.config/PulseEffects/output` folder. if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`.
+For older PulseEffects, copy it inside `~/.config/PulseEffects/output` folder. if you have the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`.
 
 Close and restart the service, then apply the new preset.
+
+## Presets list
 
 This repository provides 5 versions:
 
