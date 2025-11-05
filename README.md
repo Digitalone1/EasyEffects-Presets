@@ -14,29 +14,25 @@ Click on ***Code*** button and download the zip archive. Extract it on your syst
 
 ## How to install
 
-Choose the preset you want and copy it inside `~/.config/easyeffects/output` folder. If you have the the **Flatpak** version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`. Close and restart Easy Effects, then apply the new preset.
+Choose the preset you want and copy it inside `~/.local/share/easyeffects/output` folder. If you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/data/easyeffects/output`.
+
+For older Easy Effects GTK/Libadwaita versions, copy it inside `~/.config/easyeffects/output` folder. If you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.easyeffects/config/easyeffects/output`.
+
+For older PulseEffects, copy it inside `~/.config/PulseEffects/output` folder. if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`.
+
+Close and restart the service, then apply the new preset.
 
 This repository provides 5 versions:
 
-1. ***LoudnessEqualizer.json*** and ***LoudnessCrystalEqualizer.json*** for new Easy Effects versions using Qt framework.
+1. ***LoudnessEqualizer.json*** and ***LoudnessCrystalEqualizer.json*** for new Easy Effects versions using Qt framework. – Recommended for **8.0.0** or higher versions.
 
-  Recommended for **8.0.0** or higher versions.
+2. ***LoudnessEqualizer-GTK.json*** and ***LoudnessCrystalEqualizer-GTK.json*** for Easy Effects with new LSP Gate plugin. – Recommended from **7.0.0** to **7.2.5** versions.
 
-2. ***LoudnessEqualizer-GTK.json*** and ***LoudnessCrystalEqualizer-GTK.json*** for Easy Effects with new LSP Gate plugin.
+3. ***LoudnessEqualizer-OldGate.json*** for Easy Effects versions on Pipewire using the old Gate plugin from Calf. – Recommended from **6.1.0** to **6.2.6** versions.
 
-  Recommended from **7.0.0** to **7.2.5** versions.
+4. ***LoudnessEqualizer-PE.json*** for PulseEffects 5 on PipeWire or legacy PulseEffects on plain PulseAudio. – This uses the old Multiband Compressor and Limiter from Calf, removed by newer versions. Recommended on **4.8.0** or higher versions.
 
-3. ***LoudnessEqualizer-OldGate.json*** for Easy Effects versions on Pipewire using the old Gate plugin from Calf.
-
-  Recommended from **6.1.0** to **6.2.6** versions..
-
-4. ***LoudnessEqualizer-PE.json*** for PulseEffects 5 on PipeWire or legacy PulseEffects on plain PulseAudio.
-
-  This uses the old Multiband Compressor and Limiter from Calf, removed by newer versions. Recommended on **4.8.0** or higher versions. To apply, copy it inside `~/.config/PulseEffects/output` folder (if you have the the Flatpak version, place the preset file in `~/.var/app/com.github.wwmm.pulseeffects/config/PulseEffects/output`).
-
-5. ***LoudnessEqualizer.carxp*** for Carla-Rack Jack Host.
-
-  Launch **carla-rack** and open the file, then connect your favorite nodes and sinks/sources in Patchbay tab. To use it with Pipewire and make a persistent configuration at system startup, follow this [guide](https://wiki.archlinux.org/title/PipeWire#LADSPA,_LV2_and_VST_plugins).
+5. ***LoudnessEqualizer.carxp*** for Carla-Rack Jack Host. – Launch **carla-rack** and open the file, then connect your favorite nodes and sinks/sources in Patchbay tab. To use it with Pipewire and make a persistent configuration at system startup, follow this [guide](https://wiki.archlinux.org/title/PipeWire#Using_LADSPA,_LV2_and_VST_plugins).
 
 ## How it works
 
@@ -57,4 +53,3 @@ I used downward compressors many times and noticed that higher the rate, lower t
 Therefore an upward compressor is used to raise signals below a certain threshold, then a multiband compressor is set with a low rate.
 
 Obviously, the quality is not the same as original, but it's better than a compressor with high rate. Take in consideration that this is intended to be used only to get a quite steady level in high dynamic contents.
-
