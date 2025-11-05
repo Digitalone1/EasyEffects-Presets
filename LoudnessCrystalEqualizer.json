@@ -634,7 +634,13 @@
             "dry": -80.01,
             "envelope-boost": "None",
             "input-gain": 0.0,
+            "input-to-link": 0.0,
+            "input-to-sidechain": 0.0,
+            "link-to-input": 0.0,
+            "link-to-sidechain": 0.0,
             "output-gain": 0.0,
+            "sidechain-to-input": 0.0,
+            "sidechain-to-link": 0.0,
             "stereo-split": false,
             "wet": 0.0
         },
