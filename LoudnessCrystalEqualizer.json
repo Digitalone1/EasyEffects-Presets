@@ -107,7 +107,9 @@
             },
             "bypass": false,
             "input-gain": 0.0,
-            "output-gain": 0.0
+            "output-gain": 0.0,
+            "oversampling": false,
+            "oversampling-quality": 5.0
         },
         "equalizer#0": {
             "balance": 0.0,
