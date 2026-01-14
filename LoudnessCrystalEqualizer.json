@@ -106,6 +106,7 @@
                 "mute": false
             },
             "bypass": false,
+            "fixed-quantum": false,
             "input-gain": 0.0,
             "output-gain": 0.0,
             "oversampling": false,
@@ -386,6 +387,7 @@
             "alr": false,
             "alr-attack": 5.0,
             "alr-knee": 0.0,
+            "alr-knee-smooth": -5.0,
             "alr-release": 50.0,
             "attack": 5.0,
             "bypass": false,
