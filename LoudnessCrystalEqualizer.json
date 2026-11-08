@@ -39,7 +39,7 @@
             "wet": 0.0
         },
         "crystalizer#0": {
-            "adaptive-intensity": false,
+            "adaptive-intensity": true,
             "band0": {
                 "bypass": false,
                 "intensity": 0.0,
@@ -52,70 +52,71 @@
             },
             "band10": {
                 "bypass": false,
-                "intensity": -10.0,
+                "intensity": -7.0,
                 "mute": false
             },
             "band11": {
                 "bypass": false,
-                "intensity": -12.0,
+                "intensity": -8.0,
                 "mute": false
             },
             "band12": {
                 "bypass": false,
-                "intensity": -14.0,
+                "intensity": -10.0,
                 "mute": false
             },
             "band2": {
                 "bypass": false,
-                "intensity": -2.0,
+                "intensity": -1.0,
                 "mute": false
             },
             "band3": {
                 "bypass": false,
-                "intensity": -3.0,
+                "intensity": -2.0,
                 "mute": false
             },
             "band4": {
                 "bypass": false,
-                "intensity": -4.0,
+                "intensity": -3.0,
                 "mute": false
             },
             "band5": {
                 "bypass": false,
-                "intensity": -5.0,
+                "intensity": -3.0,
                 "mute": false
             },
             "band6": {
                 "bypass": false,
-                "intensity": -6.0,
+                "intensity": -4.0,
                 "mute": false
             },
             "band7": {
                 "bypass": false,
-                "intensity": -7.0,
+                "intensity": -5.0,
                 "mute": false
             },
             "band8": {
                 "bypass": false,
-                "intensity": -8.0,
+                "intensity": -5.0,
                 "mute": false
             },
             "band9": {
                 "bypass": false,
-                "intensity": -9.0,
+                "intensity": -6.0,
                 "mute": false
             },
             "bypass": false,
             "fixed-quantum": false,
             "input-gain": 0.0,
             "output-gain": 0.0,
-            "oversampling": false,
-            "oversampling-quality": 5.0,
+            "oversampling": true,
+            "oversampling-quality": 2.0,
             "transition-band": 120.0
         },
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
